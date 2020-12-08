@@ -1,0 +1,153 @@
+$bg_color: blue;
+$text_color: #ffff;
+
+$footer_bg: #0F87FF;
+$footer_text_color: #ffff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-section{
+
+    .navbar-logo{
+        max-width: 120px;
+    }
+}
+
+.heading-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .heading-text{
+        font-weight: bold;
+        font-size: 22px;
+        color: $text_color;
+    }
+    .img-heading{
+        padding-top: 10vh;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('/assets/images/header.png');
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+}
+
+.solution-section{
+    padding-top: 20vh;
+    position: relative;
+
+    .solution-title{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #343434;
+        font-size: 35px;
+    }
+    .item-title{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #2D5097;
+        font-size: 25px;
+    }
+}
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    // background-color: black;
+    padding-top: 10vh;
+
+    .label-form{
+        color: $text_color;
+        font-size: 20px;
+        font-weight: 10px;
+    }
+    .form-title{
+        text-transform: capitalize;
+        font-weight: bold;
+        color: $text_color;
+    }
+    .table-form{
+        width: 50%;
+    }
+    .btn-form{
+        width: 200px;
+        background-color: #E6C43E;
+        border: none;
+        color: $text_color;
+        font-weight: bold;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('/assets/images/middle.png');
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+}
+
+.content-title{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content1-img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.content-3{
+    
+    .image-content-3{
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .btn-down{
+        color: white;
+        background-color: #2631DF;
+        border-radius: 18px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .btn-down:hover{
+        background-color: $footer_bg;
+    }
+}
+
+.footer-section{
+    background-color: $footer_bg;
+    color: $footer_text_color;
+    
+    .img-footer{
+        max-width: 60%;
+        text-align: center;
+    }
+    .title-contact-us{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .icon-img{
+        max-width: 20px;
+    }
+}
